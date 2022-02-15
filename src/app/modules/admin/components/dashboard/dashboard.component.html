@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fas fa-tachometer-alt"></i> Dashboard</h3>
+        </div>
+
+        <div class="profile">
+            <div class="profile-image">
+                <img src="https://d29fhpw069ctt2.cloudfront.net/icon/image/84587/preview.svg" height="40px" width="40px" alt="">
+            </div>
+            <div class="profile-name">
+                <h5>User Username</h5>
+                <small>user@agmail.com</small>
+            </div>
+        </div>
+        <div class="sidebar-buttons">
+            <ul>
+                <li routerLinkActive="active" routerLink="./home" (click)="forTitle('Home')">
+                    
+                    <a routerLink="./home"><i class="fas fa-home i"></i>Home</a>
+                    <i class="fas fa-angle-right"></i>
+                </li>
+               
+                <li routerLinkActive="active" routerLink="./profile" (click)="forTitle('Profile')">
+                    <a routerLink="./profile"><i class="fas fa-home i"></i>Profile</a>
+                    <i class="fas fa-angle-right"></i>
+
+                </li>
+                <li>
+                    <a href=""><i class="fas fa-home i"></i>Settings</a>
+                    <i class="fas fa-angle-right"></i>
+
+                </li>
+                <li>
+                    <a href=""><i class="fas fa-home i"></i>Logout</a>
+                    <i class="fas fa-angle-right"></i>
+
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="body">
+        <div class="body-content">
+            <header class="header">
+                <div class="left-header">
+                    <h5>Hello User, welcome to</h5>
+                    <br>
+    
+                    <h1>Your {{ title }}</h1>
+    
+                </div>
+                <div class="right-header" style="display: flex; align-items: center;justify-content: center;">
+                    <ul style="display: flex; align-items: center;justify-content: center; gap:50px;">
+                        <li><a href=""><i class="fas fa-search"></i></a></li>
+
+                        <li><a href=""><i class="fas fa-bell"></i></a></li>
+                        <li><a href=""><i class="fas fa-sign-out-alt"></i></a></li>
+
+
+                    </ul>
+                </div>
+            </header>
+
+            <div class="pages">
+               <router-outlet></router-outlet>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>

@@ -1,0 +1,46 @@
+.container{
+   
+    height: 100%;
+}
+
+
+
+svg{
+    opacity: .5;
+    transition: all 0.5s ease-in-out;
+
+    
+    
+
+
+    
+    .svg2{
+        transform: translateX(-22%);
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+
+    }
+    .svg3{
+        transform: translateX(-45%);
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+
+
+    }
+    
+
+    transition: all .2s ease-in-out;
+    &:hover{
+        opacity: 1;
+        .svg2{
+            transform: translateX(0);
+            opacity: 1;
+
+        }
+        .svg3{
+            transform: translateX(0);
+            opacity: 1;
+
+        }
+    }
+}

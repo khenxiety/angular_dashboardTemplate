@@ -1,0 +1,118 @@
+.container{
+    background-color: #f3f3f3;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+
+
+    .sidebar{
+        background-color: rgb(123, 67, 150);
+        width: 250px;
+        border-radius: 8px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        padding: 10px;
+
+
+        .sidebar-header{
+            
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+           
+            color: rgb(235, 235, 235);
+            
+        }
+        .profile{
+            height: 60px;
+            display: flex;
+            
+            align-items: center;
+            border-radius: 8px ;
+            padding-left: 10px;
+            padding-right: 10px;
+           
+           
+            color: rgb(235, 235, 235);
+            background-color: rgba(213, 167, 236, 0.418);
+
+
+        }
+
+        .sidebar-buttons{
+            
+            
+            margin-top: 25px;
+            margin-bottom: 20px;
+           
+           
+            color: rgb(235, 235, 235);
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    border-radius: 8px;
+                    padding: 15px;
+                    transition:.5s;
+                    a{
+                        font-size: .9rem;
+                    }
+                    .fa-angle-right{
+                        font-size: .7rem;
+                       
+                    }
+
+
+                    .i{
+                        font-size: 1.2rem;
+                        
+                        margin-right: 15px;
+                    }
+                    &:hover{
+                        background-color: rgba(240, 255, 255, 0.26);
+                    }
+                    
+                }
+
+
+            }
+            
+        }
+
+    }
+
+    .body{
+        padding: 25px;
+        height: 100%;
+        width: 100%;
+        .body-content{
+            
+            height: 100%;
+            width: 100%;
+
+
+            header{
+                display: flex;
+                justify-content: space-between;
+
+
+                .right-header{
+                    a{
+                        color: rgb(48, 48, 48);
+                        font-size: 1.3rem
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
